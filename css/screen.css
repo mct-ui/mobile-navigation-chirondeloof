@@ -845,13 +845,11 @@ a:focus {
     left: 0;
     height: 100vh;
     pointer-events: none;
-    transform: translateX(-100%);
-    transition: transform .25s ease;
+
 }
 
 .has-mobile-nav .c-mobile-nav {
     pointer-events: auto;
-    transform: translateX(0%);
 }
 
 .c-mobile-nav__header {
@@ -882,9 +880,12 @@ a:focus {
     height: 100vh;
     width: 100vw;
     background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform .25s ease;
 }
 
 .has-mobile-nav .c-mobile-nav__body {
+    transform: translateX(0%);
 }
 
 @media (min-width: 768px) {
